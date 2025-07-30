@@ -1,48 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+        body {
             height: 100vh;
             width: 100vw;
-            
-        }
-        .main{
-            height:100% ;            
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        .con{
-                height:100% ;            
-                width: 100%;
-                 background-color: rgb(114, 212, 57);
-                 flex-direction: column;
-     
-        }
-        .box-1{
-            height:50% ;            
-            width: 10%;
-            background-color: pink;
-            
-        }.box-2{
-            height:50% ;            
-            width: 10%;
-            background-color: yellow;
-            flex-direction: column;
+
         }
 
+        .main {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+    
+
+        .bo1 {
+            height: 100%;
+            width: 20%;
+            background-color: pink;
+
+        }
+
+        .bo2 {
+            height: 100%;
+            width: 80%;
+            background-color: yellow;
+
+        }
+
+        .one {
+            height: 20%;
+            width: 100%;
+            background-color: aqua;
+        }
+
+        .two {
+            height: 20%;
+            width: 20%;
+            background-color: indianred;
+        }
+        .three{
+            height: 40%;
+            width: 20%;
+            background-color: salmon;
+        }
     </style>
 </head>
+
 <body>
-    <div class="main">
-        <div class="con">
-            <div class="box-1"></div>
-            <div class="box-2"></div>
-        </div>
-    </div>
+   <div class="main">
+<div class="bo1"></div>
+<div class="bo2">
+ <div class="one"></div>
+ <div class="two"></div>
+ <div class="three"></div>
+</div>
+   </div>
 </body>
+
 </html>
