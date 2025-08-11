@@ -85,7 +85,48 @@
             border: 1px solid black;
         }
 
-        
+        /* media for tablet */
+        @media (max-width: 769px) {
+            .calculator {
+                width: 60%;
+                height: 85%;
+                padding: 8px;
+            }
+
+            button {
+                font-size: 1.6rem;
+            }
+
+            .btn-lines {
+                height: 20%;
+            }
+
+            #display {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* media for mobile */
+        @media (max-width: 426px) {
+            .calculator {
+                width: 90%;
+                height: 90%;
+                padding: 5px;
+                border-radius: 0.8rem;
+            }
+
+            .btn-lines {
+                height: 20%;
+            }
+
+            button {
+                font-size: 1.4rem;
+            }
+
+            #display {
+                font-size: 1.2rem;
+            }
+        }
     </style>
 </head>
 
