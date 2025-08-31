@@ -32,6 +32,10 @@
             text-align: center;
             height: 250px;
             width: 250px;
+        }button{
+            font-size: xx-large;
+            color: orange;
+            background-color: black;
         }
     </style>
 </head>
@@ -65,9 +69,83 @@
 <hr>
 <!-- Project Zone -->
 <header><h1> My Project</h1></header>
-<center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s"></center>
+<center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" alt=""></center>
+<center><a href="file:///Users/Guest/Downloads/project_files-main/html-porject.html"><Button>View Project</Button></a></center>
+<br>
+<center><img src="https://www.tutorialspoint.com/css/images/css.png"></center>
 <a href="file:///Users/Guest/Downloads/project_files-main/document.html">
     <center><button>View Project</button></center>
 </a>
+<hr>
+<center><h1 style="color: orange;">Contact Me</h1></center>
+<label style="color: ora;" >Name</label>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="India">India</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
+
     </body>
 </html>
