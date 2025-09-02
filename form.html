@@ -9,7 +9,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: pink;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,6 +24,7 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 500px;
+    background-color: #1f2833;
 }
 
 h2 {
@@ -40,19 +41,10 @@ label {
     display: block;
     margin-bottom: 8px;
     color: #555;
-    font-weight: bold;
+    font-weight: lighter;
+width: 100%;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    width: calc(100% - 20px); /* Account for padding */
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    font-size: 16px;
-}
 
 textarea {
     resize: vertical; /* Allow vertical resizing only */
@@ -64,32 +56,33 @@ button {
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
+  
     font-size: 18px;
     width: 100%;
-    transition: background-color 0.3s ease;
+
 }
 
 button:hover {
-    background-color: #0056b3;
+transform: scale(1.05);
+background-color: orange;
 }
     </style>
 </head>
 <body>
     <div class="form-container">
-        <h2>Form</h2>
+        <h2 style="color: orange;">  Contact Form</h2>
         <form action="#" method="post">
             <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name" required>
+                <label for="name" style="color: orange;">Name:</label>
+                <input type="text" id="name" name="user_name"style="color: orange;" required>
             </div>
             <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="user_email" required>
+                <label for="email"style="color: orange;">Email:</label>
+                <input type="email" id="email" name="user_email" style="color: orange;"required>
             </div>
             <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="user_message" rows="5" required></textarea>
+                <label for="message" style="color: orange;">Message:</label>
+                <textarea id="message" name="user_message" style="color: orange;" rows="5" required></textarea>
             </div>
             <button type="submit">Send Message</button>
         </form>
