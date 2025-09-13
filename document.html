@@ -3,153 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planets of the Solar System</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
     <style>
-        body {
-    font-family: Arial, sans-serif;
-    background-color: #0b0c10;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #1f2833;
-    text-align: center;
-    padding: 20px;
-}
-
-h1 {
-    margin: 0;
-    color: #66fcf1;
-}
-
-main {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.project {
-    background-color: #2c3e50;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow:10px 8px 10px orange;
-}
-
-.project:hover {
-    transform: scale(1.05);
-}
-
-.project img {
-    width: 100%;
-    height: 250px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-footer {
-    background-color: #1f2833;
-    text-align: center;
-    padding: 10px;
-}
-button{
-    font-size: xx-large;
-    background-color: orange;
-}
-
+        body{
+            height: 200vh;
+            width: 100vw;
+            background: linear-gradient(red,yellow);
+        }
+        .main-container{
+            height: 50%;
+            width: 100%;
+            background-color: orange;
+            flex-direction: row;
+            display: flex;
+        }
+        .container{
+            height: 50%;
+            width: 100%;
+            background-color: aqua;
+            display: flex;
+        }
+        .box-1{
+            height: 50%;
+            width: 100%;
+            background-color: red;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>This is My Project</h1>
-    </header>
-
-    <main>
-        <section class="project">
-            <img src="https://image.slidesdocs.com/responsive-images/background/3d-rendered-social-media-icon-chess-knight-powerpoint-background_330b36532e__960_540.jpg" height="350px" width="350px">
-            <a href="file:///Users/Guest/Downloads/project_files-main/flex-chess.html">
-                    <button>View Project</button></a>
-         
-        </section>
-
-        <section class="project">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQz7a3k4yJf2rMETutDG3sV0yW_b0VmX35gg&s" height="350px" width="350px">
-            <a href="file:///Users/Guest/Downloads/project_files-main/planet.html">
-                <button>View Project</button></a>
-        </section>
-
-        <section class="project">
-            <img src="https://png.pngtree.com/png-clipart/20190924/original/pngtree-reports-icon-for-your-project-png-image_4815639.jpg" height="350px" width="350px">
-            <a href="file:///Users/Guest/Downloads/project_files-main/report.html">
-                <button>View Project</button></a>
-          
-            
-        </section>
-
-        <section class="project">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK6NsAuiO12eFqHX08TqGPcyw-xn_pZYEXouB7XgVhJUTKXZ6feBOFxKWilZwfswg894k&usqp=CAU" height="350px" width="350px">
-            <a href="file:///Users/Guest/Downloads/project_files-main/audio.html"><button>View Project</button></a>
-        </section>
-
-        <section class="project">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_pVyGAl1dd1Fdi0l-AKh6HCMnitBhrPvJmA&s" alt="">
-            <a href="file:///Users/Guest/Downloads/project_files-main/portfilo.html"><button>View Project</button></a>
-        </section>
-
-        <section class="project">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-lDIiWNhToCAgS42gtRA1k-NPgU5V1Rfktw&s" alt="">
-            <a href="file:///Users/Guest/Downloads/project_files-main/project.html">
-                <button>View Project</button>
-            </a>
-        </section>
-
-        <section class="project">
-            <img src="https://media.gettyimages.com/id/1272834112/video/television-studio-virtual-studio-set-ideal-for-green-screen-compositing.jpg?s=640x640&k=20&c=24mZ8Zv3uL7rpQMraeJq7CdTDTeenZkYOBvaUH1UtE8=" alt="">
-            <a href="file:///Users/Guest/Downloads/project_files-main/video.html">
-                <button>View Project</button>
-            </a>
-        </section>
-
-        <section class="project">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfnQFsOQI-9TOE0Otw49hNbaUB538jqiQ61A&s  " alt="">
-            <a href="./productcard.html">
-                <button>View Project</button>
-            </a>
-        </section>
-      
-         <section class="project">
-            <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRExtbfAdygq82awkCMDH3ok2c2STdEYvzNA&s" alt="">
-            <a href="./cacultot-1.html">
-                <button>View Project</button>
-            </a>
-        </section>
-         <section class="project">
-            <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfnQFsOQI-9TOE0Otw49hNbaUB538jqiQ61A&s " alt="">
-            <a href="file:///Users/Guest/Downloads/project_files-main/card.html">
-                <button>View Project</button>
-            </a>
-        </section>
-        <section class="project">
-            <img src="  https://media.istockphoto.com/id/1151521526/vector/breaking-news-style-font.jpg?s=612x612&w=is&k=20&c=Zen4eLkL2PVKHYnWuwuVYyLDzKgtyNtsXkKOF9BYYsw=" alt="">
-            <a href="file:///Users/Guest/Downloads/project_files-main/breaking%20.html">
-                <button>View Project</button>
-            </a>
-        </section>
-        <section class="project">
-            <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png " alt="">
-            <a href="https://github.com/KartikRajeshadhe/project_files">
-                <button>View Project</button>
-            </a>
-        </section>
-    </main>
-
-    <footer>
-        <p>Above Given Is My Project</p>
-    </footer>
-   
+    <div class="main-container">
+        <div class="container">
+            <div class="box-1">Home</div>
+            <div class="box-1">About</div>
+            <div class="box-1">Project</div>
+            <div class="box-1">Contact</div>
+        </div>
+    </div>
+    
 </body>
 </html>
