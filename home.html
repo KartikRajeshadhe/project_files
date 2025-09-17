@@ -9,21 +9,23 @@
         body {
             background-color: #2c3e50;
             height: 1000px;
+            scroll-behavior: smooth;
         }
 
         .main {
             background-color: black;
             display: flex;
+            scroll-behavior: smooth;
         }
 
         .coin {
             background-color: black;
             display: flex;
-            gap: 280px;
+            gap: 280px;  scroll-behavior: smooth;
 
         }
 
-        .box-1 {
+        a{
             color: orange;
             font-size: xx-large;
         }
@@ -57,6 +59,10 @@
         .project:hover {
             transform: scale(1.05);
         }
+        a:hover{
+            text-decoration: underline;
+            color: lightblue;
+        }
          
         center{
             display: flex;
@@ -72,10 +78,10 @@
 <body>
     <div class="main">
         <div class="coin">
-            <div class="box-1">Home </div>
-            <div class="box-1">About</div>
-            <div class="box-1">Project</div>
-            <div class="box-1">Contact</div>
+         <a href="#home">Home</a>
+         <a href="#about">About</a>
+         <a href="#project">Project</a>
+         <a href="#contact">Contact</a>
         </div>
     </div>
     <header>
@@ -87,6 +93,7 @@
     <hr>
     <!-- About me -->
     <header>
+        <section  id="about" class="about">
         <h1>About Me</h1>
         <img src="https://t4.ftcdn.net/jpg/08/26/29/79/360_F_826297995_gHRLKyv4GIP3m59PPertUglA2bTG9eoc.jpg" controls
             alt="">
@@ -100,16 +107,18 @@
             and discipline—both on and off the field.
 
             I'm always learning and exploring new technologies to deliver dynamic, responsive, and high-performance
-            websites.</p>
+            websites.</p></section>
     </header>
     <hr>
     <!-- Project Zone -->
     <header>
+        <section id="project" class="Project"></section>
         <h1> My Project</h1>
     </header>   
     <!-- HTML Project -->
+ 
     <div class="main-cointainer">
-    <section class="project">
+        <section class="project">
        
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s"
                 alt="">
@@ -121,9 +130,9 @@
     </section>
 
     <!-- CSS Project -->
-    <section class="project">
+    <section id="contact" class="project">
        <img src="https://cdn3d.iconscout.com/3d/premium/thumb/css-file-extension-3d-icon-png-download-5913733.png"height="290px">
-        <a href="file:///Users/Guest/Downloads/project_files-main/document.html">
+        <a href="css.project.html">
             <center><button>View Project</button></center>
         </a>
     </section>
@@ -204,7 +213,7 @@
         </div>
 
   
-<
+
 </body>
 
 </html>
