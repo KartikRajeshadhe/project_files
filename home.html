@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        html
+        {
+          
+            scroll-behavior: smooth;
+        }
         body {
             background-color: #2c3e50;
             height: 1000px;
@@ -14,8 +19,9 @@
 
         .main {
             background-color: black;
-            display: flex;
+            display: flex;  
             scroll-behavior: smooth;
+        
         }
 
         .coin {
@@ -28,11 +34,11 @@
         a{
             color: orange;
             font-size: xx-large;
+                        font-family: cursive;
         }
 
         header {
             color: rgb(237, 207, 39);
-            text-align: center;
             padding: 20px;
         }
 
@@ -59,11 +65,7 @@
         .project:hover {
             transform: scale(1.05);
         }
-        a:hover{
-            text-decoration: underline;
-            color: lightblue;
-        }
-         
+       
         center{
             display: flex;
             flex-direction:  row ;
@@ -71,47 +73,30 @@
         .main-cointainer{
             display: flex;    
         gap: 200px;    }
+        h1{
+            font-size: 100px;
+            color:lightgreen;
+        }
+        h2:hover{
+            font-size: 100px;
+            color:lightgreen;
+        }
+        h2{font-size: 100px;
+            color:pink ;}
+        h3:hover{
+            font-size: 100px;
+            color:pink;
+            text-align: center;
+        }
+        h3{
+            font-size: 100px;
+            color:lightgreen;
+            text-align: center;
+     
+        }
 
-            body {
-                font-family: Arial, Helvetica, sans-serif;
-            }
 
-            * {
-                box-sizing: border-box;
-            }
-
-            input[type=text],
-            select,
-            textarea { 
-                width: 100%;
-                padding: 12px;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                box-sizing: border-box;
-                margin-top: 6px;
-                margin-bottom: 16px;
-                resize: vertical;
-            }
-
-            input[type=submit] {
-                background-color: #04AA6D;
-                color: white;
-                padding: 12px 20px;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-            }
-
-            input[type=submit]:hover {
-                background-color: #45a049;
-            }
-
-            .container {
-                border-radius: 5px;
-                background-color: #f2f2f2;
-                padding: 20px;
-            }
-        
+         
     </style>
 </head>
 
@@ -127,17 +112,16 @@
     <header>
         <h1>Hiii I Am Kartik Adhe</h1>
         <h1>I am Full Stack Devloper</h1>
-        <img src="https://t4.ftcdn.net/jpg/08/26/29/79/360_F_826297995_gHRLKyv4GIP3m59PPertUglA2bTG9eoc.jpg" controls
-            alt="">
+     
     </header>
     <hr>
     <!-- About me -->
     <header>
         <section  id="about" class="about">
-        <h1>About Me</h1>
+        <h2>About Me</h2>
         <img src="https://t4.ftcdn.net/jpg/08/26/29/79/360_F_826297995_gHRLKyv4GIP3m59PPertUglA2bTG9eoc.jpg" controls
             alt="">
-        <p>Hello! I'm a Passionate Web Developer and Quality Assurance Tester skilled in HTML, CSS, , and Manual
+        <h4>Hello! I'm a Passionate Web Developer and Quality Assurance Tester skilled in HTML, CSS, , and Manual
             Testing.
 
             I specialize in creating visually appealing and user-friendly web applications, while ensuring top-notch
@@ -147,13 +131,13 @@
             and discipline—both on and off the field.
 
             I'm always learning and exploring new technologies to deliver dynamic, responsive, and high-performance
-            websites.</p></section>
+            websites.</h4></section>
     </header>
     <hr>
     <!-- Project Zone -->
     <header>
         <section id="project" class="Project"></section>
-        <h1> My Project</h1>
+        <h3> My Project</h3 >
     </header>   
     <!-- HTML Project -->
  
@@ -180,38 +164,81 @@
     <center>
         <h1 style="color: orange;">Contact Me</h1>
     </center>
-    <label style="color: orange;">Name</label>
-   
-            
-        </style>
-    </head>
-  
-    <body>
-        <div class="container">
-            <form action="/action_page.php">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>✨ Get In Touch</h2>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <p>
+            Feel free to reach out if you're looking for a developer, have a
+            question, or just want to connect.
+          </p>
+          <br />
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <p>
+                <a href="mailto:ayushlolusare7@gmail.com" style="color: var(--primary); text-decoration: underline">
+                  ayushlolusare7@gmail.com
+                </a>
+              </p>
+            </div>
+          </div>
 
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h3>Phone</h3>
+              <p><a href="tel:+919970954494">+91 9970954494</a></p>
+            </div>
+          </div>
 
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                    <option value="India">India</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                </select>
-
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-                <input type="submit">
-            </form>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Location</h3>
+              <p>
+                <a href="https://www.google.com/maps/place/Nagpur,+Maharashtra,+India" target="_blank">Nagpur,
+                  Maharashtra, India</a>
+              </p>
+            </div>
+          </div>
         </div>
 
-  
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Subject" />
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</body>
-
-</html>
-
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="social-links">
+        <a href="https://github.com/AyushFSD/Ayush-s-Portfolio-updated"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ayush-lolusare-742a11354/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://x.com/Aayush_Lolusare"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/ayush_lolusare/"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>&copy; 2025 Ayush Lolusare. All Rights Reserved.</p>
+    </div>
+  </footer>  
