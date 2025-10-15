@@ -5,7 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
   <link rel="stylesheet"  />
-<style>/* Basic Reset */
+<style>
+html{
+  scroll-behavior: smooth;
+}
+
+/* Basic Reset */
     * {
       margin: 0;
       padding: 0;
@@ -14,8 +19,7 @@
     
     /* Global Styles */
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
+      font-family: cursive;
       color: #333;
       background-color: #f9f9f9;
     }
@@ -84,7 +88,7 @@
     /* Projects Section */
     .projects {
       background-color: #f0f0f0;
-      padding: 60px 0;
+      padding: 60px;
     }
     
     .project-grid {
@@ -95,8 +99,9 @@
     
     .project-card {
       background: white;
-      padding: 20px;
-      flex: 1 1 30%;
+      padding: 10px;
+      gap: 20px;
+  display: flex;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     
@@ -113,6 +118,46 @@
       text-align: center;
       padding: 20px 0;
     }
+    .html{
+          background-color: #2c3e50;
+    padding: 15px;
+    width: 10%;
+    height: 200px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    transform: scale(1.05); 
+
+        }
+        .CSS{
+            background-color: #2c3e50;
+    padding: 15px;
+    width: 10%;
+
+    height: 200px;    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+
+        }
+        .project {
+            background-color: black;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            width: 400px;
+         
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+            box-shadow: 10px 10px 10px 10px orange;
+        }
+        button{
+          font-size: xx-large;
+          background-color: black;
+          color: orange;
+        }
     
 
     </style>
@@ -120,7 +165,7 @@
 <body>
   <header>
     <div class="container">
-      <h1>Your Name</h1>
+      <h1>Kartik Adhe</h1>
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
@@ -133,7 +178,7 @@
 
   <section class="hero">
     <div class="container">
-      <h2>Hello, I'm Your Name</h2>
+      <h2>Hello, I'm Kartik Adhe</h2>
       <p>Aspiring Web Developer</p>
       <a href="#projects" class="btn">View My Work</a>
     </div>
@@ -151,17 +196,28 @@
       <h2>Projects</h2>
       <div class="project-grid">
         <div class="project-card">
-          <h3>Project One</h3>
-          <p>Description of project one.</p>
+          <div class="main-cointainer">
+            <section class="project">
+           
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s"
+                    alt="">
+                    <br>
+        
+            <a href="file:///Users/Guest/Downloads/project_files-main/html-porject.html"><Button>View
+                        Project</Button></a>
+            <br>
+        </section>
         </div>
         <div class="project-card">
-          <h3>Project Two</h3>
-          <p>Description of project two.</p>
+        <!-- CSS Project -->
+    <section id="contact" class="project">
+      <img src="https://cdn3d.iconscout.com/3d/premium/thumb/css-file-extension-3d-icon-png-download-5913733.png"height="290px">
+       <a href="css.project.html">
+           <center><button>View Project</button></center>
+       </a>
+   </section>
         </div>
-        <div class="project-card">
-          <h3>Project Three</h3>
-          <p>Description of project three.</p>
-        </div>
+        
       </div>
     </div>
   </section>
@@ -169,7 +225,7 @@
   <section id="contact" class="contact">
     <div class="container">
       <h2>Contact</h2>
-      <p>Email me at: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p>Email me at: <a href="mailto:kartikadhe18com">kartikadhe18.com</a></p>
     </div>
   </section>
 
