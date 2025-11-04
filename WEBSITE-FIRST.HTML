@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet"  />
+<style>
+html{
+  scroll-behavior: smooth;
+}
+
+/* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Global Styles */
+    body {
+      font-family: cursive;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+    
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px 0;
+    }
+    
+    /* Header */
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px 0;
+    }
+    
+    header h1 {
+      display: inline-block;
+    }
+    
+    nav {
+      float: right;
+    }
+    
+    nav ul {
+      list-style: none;
+    }
+    
+    nav ul li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+    
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    /* Hero Section */
+    .hero {
+      background: #007BFF;
+      color: #fff;
+      padding: 100px 0;
+      text-align: center;
+    }
+    
+    .hero .btn {
+      display: inline-block;
+      background: #fff;
+      color: #007BFF;
+      padding: 10px 20px;
+      margin-top: 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    
+    /* About Section */
+    .about {
+      padding: 60px 0;
+      background-color: #fff;
+    }
+    
+    /* Projects Section */
+    .projects {
+      background-color: #f0f0f0;
+      padding: 60px;
+    }
+    
+    .project-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    
+    .project-card {
+      background: white;
+      padding: 10px;
+      gap: 20px;
+  display: flex;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    
+    /* Contact Section */
+    .contact {
+      padding: 60px 0;
+      background: #fff;
+    }
+    
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .html{
+          background-color: #2c3e50;
+    padding: 15px;
+    width: 10%;
+    height: 200px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    transform: scale(1.05); 
+
+        }
+        .CSS{
+            background-color: #2c3e50;
+    padding: 15px;
+    width: 10%;
+
+    height: 200px;    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+
+        }
+        .project {
+            background-color: black;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            width: 400px;
+         
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+            box-shadow: 10px 10px 10px 10px orange;
+        }
+        button{
+          font-size: xx-large;
+          background-color: black;
+          color: orange;
+        }
+    
+
+    </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Kartik Adhe</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Hello, I'm Kartik Adhe</h2>
+      <p>Aspiring Web Developer</p>
+      <a href="#projects" class="btn">View My Product</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a web developer passionate about building beautiful and functional websites. I have experience with HTML, CSS.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="main-cointainer">
+            <section class="project">
+           
+            <img src="https://media.istockphoto.com/id/1532429626/vector/set-of-education-3d-icons-back-to-school-concept.jpg?s=612x612&w=0&k=20&c=MTbgF4czckis_DLQssXdUbyCRCNFFFNlRj4ks9ikm5U="
+            height="300px"
+                    alt="">
+                    <br>
+        
+            <a href="website.html"><Button>View
+                        Project</Button></a>
+            <br>
+        </section>
+        </div>
+    
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email me at: <a href="mailto:kartikadhe18com">kartikadhe18.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>; 2025 Kartik . All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
