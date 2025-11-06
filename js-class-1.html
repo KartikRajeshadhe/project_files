@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .card {
+            width: 40%;
+            height: 50%;
+
+        }
+
+        .card-img {
+            width: 80%;
+            height: 70%;
+            background-color: bisque;
+
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .button-group {
+            width: 80%;
+            height: 20%;
+            background-color: rgb(20, 224, 224);
+            justify-content: center;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+        button{
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-img">
+            <img src="https://www.livemint.com/lm-img/img/2025/04/13/1600x900/Virat_Kohli_green_1744531228402_1744531245901.jpeg" alt="" id="image">
+        </div>
+        <div class="button-group">
+            <button onclick="imageOne()" >👑1st img👑</button>
+            <button onclick="imageTwo()">👑2nd img👑</button>
+        </div>
+    </div>
+    <script>
+        function imageOne() {
+            document.getElementById("image").src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXx-K9bcn8ZWi4Mt04XX5PAXRv0VfO-6_1oA&s"
+        }
+         function imageTwo() {
+            document.getElementById("image").src="https://www.hindustantimes.com/ht-img/img/2025/06/03/550x309/CRICKET-IPL-RCB-PBKS--7_1748978910449_1748978921341.JPG"
+        }
+    </script>
+</body>
+
+</html>
+
