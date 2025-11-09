@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>criket team change on click</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 30%;
+            height: 80%;
+            box-shadow: 5px 5px 50px 3px rgb(153, 147, 147);
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .bulb-image{
+           width: 90%;
+           height: 70%;
+           display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 80%;
+            height: 100%;
+           
+        }
+        .btn-grp{
+            width: 90%;
+            height: 30%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        button{
+            width: 150px;
+            height: 50px;
+            border-radius: 10px;
+            border: none;
+            font-size: 20px;
+            background-color: black;
+            color: aquamarine;
+        }
+        button:hover{
+            background-color: orange;
+        }
+
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="bulb-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxtmz4zNKfysb5K3QQvoVSU4Y0U5N-VCW22w&s" alt="" id="image">
+        </div>
+        <div class="btn-grp">
+            <button onclick="viratKohli()">viratKohli</button>
+
+            <button onclick="shubmanGill()">shubmanGill</button>
+            <button onclick="rohitSharma()">rohitSharma</button>
+            <button onclick="suryaKumar()">suryaKumar</button>
+        </div>
+     </div>
+     <script>
+        function  viratKohli (){
+            document.getElementById("image").src="https://dpwishes.com/wp-content/uploads/2023/10/virat-kohli-dp-crown-on-virat-kohli-pic.jpg"
+        }
+        function shubmanGill (){
+            document.getElementById("image").src="https://media.gettyimages.com/id/2155144022/photo/india-portraits-icc-mens-t20-cricket-world-cup-west-indies-usa-2024.jpg?s=612x612&w=gi&k=20&c=IRdaDyLhIzF-aIoE0VGA7uzRW0l0j1Dz2bHCESxzERs=" 
+        }
+       
+        function rohitSharma(){
+            document.getElementById("image").src="https://w0.peakpx.com/wallpaper/322/693/HD-wallpaper-rohit-sharma-best-blue-smoky-effect-hitman-cricketer.jpg"
+        }
+        function suryaKumar(){
+            document.getElementById("image").src="https://i.pinimg.com/736x/fa/76/5a/fa765aebbb02caf0db94de3a62bf66fc.jpg"
+        }
+     </script>
+</body>
+</html>
