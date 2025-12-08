@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+       
+        <div class="btn-grp"><br>
+<h3>
+
+Number Comparison
+</h3>
+
+
+            
+           <h3  id="display"><br>
+
+    <label>First number </label>
+    <br>
+    <input type="number" name="" id="input-1">
+    <br>
+    <label>Second Number</label>
+    <br>
+    <input type="number" name="" id="input-2">
+    <br>
+        <div class="container">
+     
+    <button onclick="nameKartik">Compare Number (First >Secong)</button>
+        </div>
+     </div>
+    <script>
+        function nameKartik(){
+        let a=document.getElementById("input-1");   
+           let b=document.getElementById("input-2");
+           //campair values
+           let isEqual = a < b ;
+           //display result
+           alert(isEqual);
+        }
+
+
+        nameKartik()
+    </script>
+</body>
+
+</html>

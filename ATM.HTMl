@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Withdraw</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 30%;
+            height: 80%;
+            box-shadow: 5px 5px 50px 3px rgb(153, 147, 147);
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+       
+               img{
+            width: 80%;
+            height: 100%;
+           
+        }
+        .btn-grp{
+            width: 90%;
+            height: 30%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        button{
+            width: 150px;
+            height: 50px;
+            border-radius: 10px;
+            border: none;
+            font-size: 20px;
+        }
+        button:hover{
+            background-color: darkcyan;
+        }
+        .display{
+            background-color: darkcyan;
+            display: flex;
+        }
+        input{
+            height: 70%;
+            width: 130%;
+        }
+
+    </style>
+</head>
+<body>
+     <div class="container">
+     
+<h1>ATM Withdrawal</h1>
+
+
+       
+        <div class="btn-grp"><br>
+<h3>Current  Balance</h3>
+
+
+            
+           <h3  id="display"><br>
+<input type="number" id="input" placeholder="Enter amount to Withdraw">
+<br>
+<br>
+
+            <button onclick="myFunctionOne()">Withdraw</button>
+        </div>
+     </div>
+     <script>
+
+     
+ 
+        function myFunctionOne(){
+        let Balance=9500;
+
+            let om = document.getElementById("input").value;
+            Balance = Balance-Number(om)
+            document.getElementById("display").innerHTML=Balance;
+        }
+        myFunctionOne()
+
+      
+     </script>
+</body>
+</html>

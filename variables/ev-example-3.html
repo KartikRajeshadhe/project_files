@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evening example three </title>
+</head>
+<body>
+    <h3>Current Balance</h3>
+    <h3 id="display"></h3>  
+    <input type="number"  id="input" placeholder="">
+  <button onclick="myFunction()">Add</button>
+    <button onclick="myFunctionOne()">Sub</button>
+    <script>     
+     let aai =0
+         document.getElementById("display").innerHTML =aai;
+        function myFunction(){
+            let kartik = document.getElementById("input").value;//200
+      
+            aai = aai + Number(kartik)
+            document.getElementById("display").innerHTML =aai;
+        
+        }
+            
+            document.getElementById("display").innerHTML =Balance;
+        function myFunctionOne(){
+        
+
+            let balu = document.getElementById("input").value;
+            Balance = Balance-Number(om)
+            document.getElementById("display").innerHTML=Balance;
+        }
+    </script>
+</body>
+</html>
