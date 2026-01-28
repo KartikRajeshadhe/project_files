@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function electrical(){
+            let units = Number(prompt ("Enter unit consumed"));
+            if (units<=50){
+                let charges = units * 7;
+                console.log("Your total bill is :" + charges)
+            }
+            else if( units <=150){
+                let charges =units * 8
+                console.log( " Your total bill is: " + charges)
+            }
+            else if (units <=250){
+                let charges = units *100*8+(units -150) *10;
+                console.log("Your total bill is  :" + charges)
+            }
+            else{
+                let charges = units * 12;
+                console.log("Your total bill is :" + charges)
+            }
+        }
+electrical();
+    </script>
+</body>
+</html>
