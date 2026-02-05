@@ -13,6 +13,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            background-image:url(https://media.istockphoto.com/id/1381637603/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=w64j3fW8C96CfYo3kbi386rs_sHH_6BGe8lAAAFS-y4=) ;
+        background-repeat: no-repeat;
+    background-size: cover;
+ 
         }
         .container{
             width: 30%;
@@ -44,10 +48,10 @@
             height: 50px;
             border-radius: 10px;
             border: none;
-            font-size: 20px;
+            font-size: 25px;
         }
         button:hover{
-            background-color: darkcyan;
+            background-color:orange;
         }
         .display{
             background-color: darkcyan;
@@ -57,43 +61,35 @@
             height: 70%;
             width: 130%;
         }
+        button{
+            background-color: black;
+            color: red;
+        }
 
     </style>
 </head>
 <body>
      <div class="container">
-     
-<h1>ATM Withdrawal</h1>
+
+        <p id="display"></p>
+        <p id="display-2"></p>
+        <button onclick="getMoney()">Get Money</button>
+        <script>
 
 
-       
-        <div class="btn-grp"><br>
-<h3>Current  Balance</h3>
+            let Kartik = 10000
+            document.getElementById("display").innerHTML = Kartik
+
+            let Adhe = 0
+            function getMoney() {
+                Adhe = prompt("Enter amount")
+                Kartik = Kartik - Number(Adhe)
+                document.getElementById("display-2").innerHTML = Kartik
+            }
 
 
-            
-           <h3  id="display"><br>
-<input type="number" id="input" placeholder="Enter amount to Withdraw">
-<br>
-<br>
 
-            <button onclick="myFunctionOne()">Withdraw</button>
-        </div>
-     </div>
-     <script>
-
-     
- 
-        function myFunctionOne(){
-        let Balance=9500;
-
-            let om = document.getElementById("input").value;
-            Balance = Balance-Number(om)
-            document.getElementById("display").innerHTML=Balance;
-        }
-        myFunctionOne()
-
-      
-     </script>
+        </script>
+    </div>
 </body>
 </html>
