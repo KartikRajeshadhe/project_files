@@ -1,25 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <input type="number" id="abc">
-    <button onclick="checker()">Even or odd</button>
-    <p id="display"></p>
-    <script>
-        function checker (){ 
-            let a = document.getElementById("abc").value;
-            if( a % 2==0 ){
-                document.getElementById("display").innerHTML ="your number is even";
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="number" id="abc">
+        <button onclick="checker()">Even or odd</button>
+        <p id="display"></p>
+        <script>
+            function checker (){ 
+                let a = document.getElementById("abc").value;
+                if( a % 2==0 ){
+                    document.getElementById("display").innerHTML ="your number is even";
+                }
+                else  {
+                    document.getElementById("display").innerHTML= "your number is odd";
+                }
             }
-            else  {
-                document.getElementById("display").innerHTML= "your number is odd";
-            }
-        }
-     
-    </script>
-</body>
-</html>
+        
+        </script>
+    </body>
+    </html>

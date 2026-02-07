@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <h1>Divisble Checker</h1>
+        <br>
+        <br>
+        <input type="number" id="xyz">
+        <br>
+        <br>
+        <button onclick="kartik()">Even or odd</button>
+        <p id="display"></p>
+        <script>
+            function kartik() {
+                let a = document.getElementById("xyz").value;
+                if (a % 3== 0) {
+                    document.getElementById("display").innerHTML = "your number is fizz";
+                }
+                else if (a % 5 == 0) {
+                    document.getElementById("display").innerHTML = " your number is buzz"
+                }
+                else if (a % 5 && 3 == 0) {
+                    document.getElementById("display").innerHTML = " your number is fizz buzz"
+                }
+                else {
+                    document.getElementById("display").innerHTML = "your number is  divisble not by 3 and 5";
+                }
+            }
+        </script>
+</body>
+
+</html>
